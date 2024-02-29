@@ -2,14 +2,30 @@ window.addEventListener("load", function () {
     elemekElerese1();
     elemekElerese2();
     elemekElerese3();
+    elemekElerese4();
 });
 
 function elemekElerese1() {
-    /**Ide jön az első feladat */
+    const ELEM =document.querySelector("#f1")
+    console.log(ELEM)
 }
-function elemekElerese1() {
-    /**Ide jön az 2.  feladat */
+function elemekElerese2() {
+    ELEM2=document.querySelector("#ide")
+    ELEM2.innerHTML="<p>Jó reggelt!</p>"
 }
-function elemekElerese1() {
-    /**Ide jön az 3. feladat */
+function elemekElerese3() {
+    const ELEM3=document.querySelector(".ide")
+    ELEM3.innerHTML="<p>Jó reggelt!</p>"
+}
+
+function elemekElerese4() {
+    const ELEM4=document.querySelector(".lista")
+    let txt="<ul>"
+    for (let index = 0; index < 5; index++) {
+        a = Math.floor(Math.random()*21+10)
+        txt+="<li>" + a +"</li>";  
+    }
+    txt="</ul>"
+    ELEM4.innerHTML=txt
+    console.log(txt)
 }
