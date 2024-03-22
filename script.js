@@ -66,7 +66,7 @@ function kattintas(){
     const ELEM7=$(".lista")
     ELEM7.on("click", kattintasutan);
     function kattintasutan(){
-        kattintas=$(".lista")= ELEM7.innerHTML
+        kattintas=$(".lista")= ELEM7.html
      }
 }
 
